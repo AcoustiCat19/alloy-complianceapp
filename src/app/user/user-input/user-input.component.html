@@ -1,0 +1,73 @@
+<div class="row">
+    <div class="col md-4 col sm-8">
+        <form method="post" class="row text needs-validation" style="margin-top: 5px; margin-bottom: 5px;">
+            <h5> Welcome to our platform! Please enter your information below to get started.</h5>
+            <div class="col-sm-4 form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" class="form-control" placeholder="Jane" #firstNameInput required="true">
+            </div>
+            <div class="col-sm-4 form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" class="form-control" placeholder="Doe" #lastNameInput required="true">
+            </div>
+            <div class="col-sm-6 form-group">
+                <label for="address-one">Address Line One</label>
+                <input type="text" id="address-one" class="form-control" placeholder="123 Main Street" #addressOneInput required="true">
+            </div>
+            <div class="col-sm-6 form-group">
+                <label for="address-two">Address Line Two</label>
+                <input type="text" id="address-two" class="form-control" placeholder="Apt. 1" #addressTwoInput required="true">
+            </div>
+            <div class="col-sm-3 form-group">
+                <label for="city">City</label>
+                <input type="text" id="city" class="form-control" placeholder="New York" #cityInput required="true">
+            </div>
+            <div class="col-sm-3 form-group">
+                <label for="state">State</label>
+                <input type="inputState" id="state" class="form-control" placeholder="NY" #stateInput required="true">
+            </div>
+            <div class="col-sm-3 form-group">
+                <label for="zip">Zip Code</label>
+                <input type="inputZip" id="zip" class="form-control" placeholder="10027" #zipInput required="true">
+            </div>
+            <div class="col-sm-3 form-group">
+                <label for="country">Country Code</label>
+                <input type="text" id="country" class="form-control" placeholder="US" #countryInput required="true">
+            </div>
+            <div class="col-sm-4 form-group">
+                <label for="ssn">SSN</label>
+                    <input type="number" id="ssn" class="form-control" placeholder="123456789" #ssnInput required="true">
+            </div>
+            <div class="col-sm-4 form-group">
+                <label for="dob">Date of Birth</label>
+                <input type="text" id="dob" class="form-control" placeholder="2000-01-31" #dobInput required="true">
+            </div>
+            <div class="col-sm-6 form-group">
+                <label for="phone">Phone Number</label>
+                <input type="number" id="phone" class="form-control" placeholder="16462223333" #phoneInput required="true">
+            </div>
+            <div class="col-sm-6 form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" class="form-control" placeholder="jane.doe@email.com" #emailInput required="true">
+            </div>
+        </form>
+        <div style="margin-top: 10px;"></div>    
+        <div class="row">
+            <div class="col-xs-12">
+                <button type="button" class="btn btn-primary" (click)="ngOnClick()">Submit</button>
+            </div>
+        </div>
+        <div style="color: red; margin-top: 5px">{{Message}}</div>
+    </div>
+</div>
+<h4 style="margin-top: 10px; color: royalblue;">{{statusMessage}}</h4>
+
+<div *ngIf="showCompliancedGif">
+    <img id="complianced-pic" src="assets/COMPLIANCED.png">
+</div>
+<div *ngIf="showReviewGif">
+    <img id="review-pic" src="assets/REVIEW.png">
+</div>
+<div *ngIf="showSeemsLegitGif">
+    <img id="seems-legit-pic" src="assets/SEEMS LEGIT.png">
+</div>

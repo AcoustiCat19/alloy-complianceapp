@@ -1,0 +1,9 @@
+.background {
+    position: absolute;
+    background-image: url("src/assets/frantisek-g-clouds-unsplash.jpg");
+    height: 100%;
+    width: 100%;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-color: black;
+}
